@@ -1,0 +1,83 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 220 33% 98%;
+    --foreground: 180 8% 20%;
+    --card: 0 0% 100%;
+    --card-foreground: 180 8% 20%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 180 8% 20%;
+    --primary: 195 60% 56%;
+    --primary-foreground: 210 40% 98%;
+    --secondary: 26 24% 60%;
+    --secondary-foreground: 222.2 47.4% 11.2%;
+    --muted: 217 10% 90%;
+    --muted-foreground: 215.4 16.3% 46.9%;
+    --accent: 23 29% 54%;
+    --accent-foreground: 222.2 47.4% 11.2%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+    --ring: 195 60% 56%;
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    --background: 180 8% 20%;
+    --foreground: 210 40% 98%;
+    --card: 180 8% 20%;
+    --card-foreground: 210 40% 98%;
+    --popover: 180 8% 20%;
+    --popover-foreground: 210 40% 98%;
+    --primary: 195 60% 56%;
+    --primary-foreground: 222.2 47.4% 11.2%;
+    --secondary: 26 24% 60%;
+    --secondary-foreground: 210 40% 98%;
+    --muted: 217.2 32.6% 17.5%;
+    --muted-foreground: 215 20.2% 65.1%;
+    --accent: 23 29% 54%;
+    --accent-foreground: 210 40% 98%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 217.2 32.6% 17.5%;
+    --input: 217.2 32.6% 17.5%;
+    --ring: 195 60% 56%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+}
+
+@layer utilities {
+  .physiobg-light {
+    background-color: #f9f9fb;
+  }
+
+  .physiobg-dark {
+    background-color: #2e3736;
+  }
+
+  .physiobtn {
+    background-color: #51adcf;
+    color: white;
+    font-weight: 600;
+    border-radius: 9999px;
+    padding: 0.75rem 1.5rem;
+    transition: all 0.2s;
+  }
+
+  .physiobtn:hover {
+    background-color: #4095b5;
+  }
+}
