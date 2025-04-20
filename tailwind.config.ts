@@ -44,7 +44,7 @@ export default {
   			input: 'hsl(var(--input))',
   			ring: 'hsl(var(--ring))',
             physio: {
-                'primary': '#51adcf',
+                'primary': '#1BA89B',
                 'secondary': '#9d6550',
                 'dark': '#2e3736',
                 'light': '#f9f9fb',

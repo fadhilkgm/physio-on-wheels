@@ -6,21 +6,16 @@ import Image from "next/image";
 const AboutSection = () => {
   return (
     <section id="solution" className="py-16 bg-physiobg-light">
-      <div className="container mx-auto px-4">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
-          <div className="lg:order-2">
-            <div className="rounded-lg overflow-hidden h-80 md:h-96 relative">
-              <Image
-                src="https://ext.same-assets.com/3699100661/80946248.jpeg"
-                alt="Pascal, the physiotherapist"
-                fill
-                className="object-cover"
-              />
-            </div>
-          </div>
-
-          <div className="lg:order-1 space-y-6">
-            <h2 className="text-3xl md:text-4xl font-bold text-physio-dark">
+      <div className="max-w-7xl mx-auto p-4 py-16  sm:p-6 bg-white rounded-lg">
+      <div className="text-center mb-12">
+          <h2 className=" text-[#1BA89B] text-xl font-medium mb-2">
+            About US
+          </h2>
+        </div>
+        <div className="flex flex-col-reverse lg:flex-row gap-8">
+          {/* Text content section - on left for desktop */}
+          <div className="w-full lg:w-3/5 space-y-5">
+          <h2 className="text-3xl md:text-4xl font-bold text-physio-dark">
               Hi, I'm Pascal. I deliver accessible physical therapy.
             </h2>
 
@@ -30,7 +25,12 @@ const AboutSection = () => {
                   Therapy where it works best.
                 </h3>
                 <p className="text-gray-700">
-                  Inspired by one of my favourite professors, the idea for Physio on Wheels came from a simple truth: We move to interact with our surroundings. To improve mobility problems we need to assess and address this interaction. That's why I bring therapy to you. But let's face it, it's also very convenient :-)
+                  Inspired by one of my favourite professors, the idea for
+                  Physio on Wheels came from a simple truth: We move to interact
+                  with our surroundings. To improve mobility problems we need to
+                  assess and address this interaction. That's why I bring
+                  therapy to you. But let's face it, it's also very convenient
+                  :-)
                 </p>
               </div>
 
@@ -39,9 +39,41 @@ const AboutSection = () => {
                   Over a decade of experience.
                 </h3>
                 <p className="text-gray-700">
-                  With over a decade of experience in accessible care delivery and an MSc in Rehabilitation Science, I specialize in providing in-home therapy for individuals with chronic pain, neurological disorders, post-surgical rehabilitation needs, and older adults with complex mobility issues.
+                  With over a decade of experience in accessible care delivery
+                  and an MSc in Rehabilitation Science, I specialize in
+                  providing in-home therapy for individuals with chronic pain,
+                  neurological disorders, post-surgical rehabilitation needs,
+                  and older adults with complex mobility issues.
+                </p>
+                <p className="text-gray-700">
+                  With over a decade of experience in accessible care delivery
+                  and an MSc in Rehabilitation Science, I specialize in
+                  providing in-home therapy for individuals with chronic pain,
+                  neurological disorders, post-surgical rehabilitation needs,
+                  and older adults with complex mobility issues.
+                </p>
+                <p className="text-gray-700">
+                  With over a decade of experience in accessible care delivery
+                  and an MSc in Rehabilitation Science, I specialize in
+                  providing in-home therapy for individuals with chronic pain,
+                  neurological disorders, post-surgical rehabilitation needs,
+                  and older adults with complex mobility issues.
                 </p>
               </div>
+            </div>
+
+   
+          </div>
+
+          {/* Image section - on right for desktop */}
+          <div className="w-full lg:w-2/5 mb-6 lg:mb-0">
+            <div className="relative h-[700px] lg:h-full">
+              <Image
+                src="/about-img.jpg"
+                alt="Managing Director of Vidacta India"
+                fill
+                className="rounded-lg object-cover"
+              />
             </div>
           </div>
         </div>
