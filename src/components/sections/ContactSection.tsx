@@ -8,13 +8,12 @@ import { Textarea } from "@/components/ui/textarea";
 const ContactSection = () => {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    // In a real application, this would send data to a server or API
     console.log("Form submitted");
     alert("Thank you for your message. We'll get back to you soon!");
   };
 
   return (
-    <section className="py-16 bg-white">
+    <section className="py-16 bg-white" id="contact">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-physio-dark mb-6">
@@ -23,18 +22,18 @@ const ContactSection = () => {
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
-              href="tel:16048493737"
+              href="tel:7370025002"
               className="bg-physio-primary text-white px-6 py-3 rounded-full text-sm font-semibold hover:bg-opacity-90 transition text-center"
             >
-              Call for a Free Consult
+              Call for a Consult
             </a>
             <a
-              href="https://cal.com/pascalbolla"
+              href="https://wa.me/+917370025002?text=Hi,%20I'm%20interested%20in%20booking%20a%20consultation."
               target="_blank"
               rel="noopener noreferrer"
               className="border border-physio-primary text-physio-primary px-6 py-3 rounded-full text-sm font-semibold hover:bg-physio-primary hover:text-white transition text-center flex items-center justify-center"
             >
-              Book my Virtual Visit
+              Book a Consultation
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 20 20"
@@ -58,11 +57,7 @@ const ContactSection = () => {
 
           <form onSubmit={handleSubmit} className="space-y-6">
             <div>
-              <Input
-                placeholder="Name"
-                className="bg-white"
-                required
-              />
+              <Input placeholder="Name" className="bg-white" required />
             </div>
 
             <div>

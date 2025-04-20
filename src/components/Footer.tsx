@@ -11,47 +11,51 @@ const Footer = () => {
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <div>
-            <h3 className="font-semibold text-sm text-gray-300 mb-4">Physio on Wheels</h3>
+            <h3 className="font-semibold text-sm text-gray-300 mb-4">
+              Physio on Wheels
+            </h3>
             <p className="text-sm text-gray-400">
-              Registered as <em>Pascal Bolla Healthcare & Consulting</em> in British Columbia, Canada
+              A mobile healthcare initiative by <strong>Mfitt Calicut</strong>
             </p>
           </div>
-
           <div>
-            <h3 className="font-semibold text-sm text-gray-300 mb-4">Address</h3>
+            <h3 className="font-semibold text-sm text-gray-300 mb-4">
+              Address
+            </h3>
             <address className="not-italic text-sm text-gray-400">
-              Box 917<br />
-              2007 Smoke Bluff Road<br />
-              Squamish, BC, V8B 0A6
+              Karanthur
+              <br />
+              Kunnamangalam
+              <br />
+              Near Markaz
             </address>
           </div>
 
           <div>
-            <h3 className="font-semibold text-sm text-gray-300 mb-4">Contacts</h3>
+            <h3 className="font-semibold text-sm text-gray-300 mb-4">
+              Contacts
+            </h3>
             <p className="text-sm text-gray-400 mb-1">
               <a
-                href="mailto:pascal@physioonwheels.com"
+                href="mailto:info@physioonwheels.in"
                 className="hover:text-white transition"
               >
-                pascal@physioonwheels.com
+                info@physioonwheels.in
               </a>
             </p>
             <p className="text-sm text-gray-400 mb-1">
-              <a
-                href="tel:16048493737"
-                className="hover:text-white transition"
-              >
-                1 (604) 849 3737
+              <a href="tel:16048493737" className="hover:text-white transition">
+              +91 737 002 5002
               </a>
             </p>
             <p className="text-sm text-gray-400">
               <a
-                href="https://www.linkedin.com/in/pascalbolla/"
+                href="https://www.instagram.com/physio_on_wheels"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="hover:text-white transition"
               >
-                linkedin.com/in/pascalbolla
+                instagram.com/physio_on_wheels
               </a>
             </p>
           </div>
@@ -69,8 +73,8 @@ const Footer = () => {
               >
                 <path d="M11.645 20.91l-.007-.003-.022-.012a15.247 15.247 0 01-.383-.218 25.18 25.18 0 01-4.244-3.17C4.688 15.36 2.25 12.174 2.25 8.25 2.25 5.322 4.714 3 7.688 3A5.5 5.5 0 0112 5.052 5.5 5.5 0 0116.313 3c2.973 0 5.437 2.322 5.437 5.25 0 3.925-2.438 7.111-4.739 9.256a25.175 25.175 0 01-4.244 3.17 15.247 15.247 0 01-.383.219l-.022.012-.007.004-.003.001a.752.752 0 01-.704 0l-.003-.001z" />
               </svg>
-            </span>
-            in Squamish, BC {currentYear} by Pascal Bolla
+            </span>{" "}
+            {currentYear} by Fadhil
           </p>
         </div>
       </div>

@@ -18,6 +18,35 @@ const Navbar = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+  // Smooth scroll function
+  const scrollToSection = (e, sectionId) => {
+    e.preventDefault();
+    
+    // Close mobile menu if it's open
+    if (isMobileMenuOpen) {
+      setIsMobileMenuOpen(false);
+    }
+    
+    // Handle the home link specially
+    if (sectionId === 'top') {
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+      });
+      return;
+    }
+    
+    // For other sections
+    const section = document.getElementById(sectionId);
+    if (section) {
+      const offsetTop = section.offsetTop - 100; // Adjust offset to account for fixed header
+      window.scrollTo({
+        top: offsetTop,
+        behavior: 'smooth'
+      });
+    }
+  };
+
   return (
     <header className="fixed top-0 left-0 right-0 z-50 px-4 py-2 transition-all duration-300">
       <nav
@@ -28,45 +57,71 @@ const Navbar = () => {
         } dark:bg-gray-900/90`}
       >
         {/* Logo */}
-        <Link href="/" className="flex items-center">
+        <a href="#" onClick={(e) => scrollToSection(e, 'top')} className="flex items-center">
           <Image
             src="/logo-physio-tp.png"
             alt="Physio On Wheels"
-            width={70}
-            height={70}
-            className="object-contain h-20 w-auto"
+            width={50}
+            height={50}
+            className="object-contain h-16 w-auto md:h-20 md:w-auto"
           />
-        </Link>
+        </a>
 
         {/* Desktop Navigation */}
         <ul className="hidden md:flex space-x-6 font-medium text-gray-700 dark:text-white items-center">
           <li>
-            <Link href="#" className="hover:text-[#149386] text-[#1BA89B] font-semibold transition-colors">
+            <a 
+              href="/" 
+              onClick={(e) => scrollToSection(e, 'top')} 
+              className="hover:text-[#149386] text-[#1BA89B] font-semibold transition-colors"
+            >
               Home
-            </Link>
+            </a>
           </li>
           <li>
-            <Link href="#" className="hover:text-[#149386] transition-colors">
+            <a 
+              href="#about" 
+              onClick={(e) => scrollToSection(e, 'about')} 
+              className="hover:text-[#149386] transition-colors"
+            >
               About
-            </Link>
+            </a>
           </li>
           <li>
-            <Link href="#" className="hover:text-[#149386] transition-colors">
+            <a 
+              href="#services" 
+              onClick={(e) => scrollToSection(e, 'services')} 
+              className="hover:text-[#149386] transition-colors"
+            >
               Services
-            </Link>
+            </a>
           </li>
           <li>
-            <Link href="#" className="hover:text-[#149386] transition-colors">
-              Pricing
-            </Link>
+            <a 
+              href="#gallery" 
+              onClick={(e) => scrollToSection(e, 'gallery')} 
+              className="hover:text-[#149386] transition-colors"
+            >
+              Gallery
+            </a>
           </li>
           <li>
-            <Link
-              href="#"
+            <a 
+              href="#faq" 
+              onClick={(e) => scrollToSection(e, 'faq')} 
+              className="hover:text-[#149386] transition-colors"
+            >
+              FAQ
+            </a>
+          </li>
+          <li>
+            <a
+              href="#contact"
+              onClick={(e) => scrollToSection(e, 'contact')}
               className="bg-physio-primary text-white px-5 py-2 rounded-full hover:bg-physio-primary/90 transition-colors"
             >
               Contact
-            </Link>
+            </a>
           </li>
         </ul>
 
@@ -96,32 +151,58 @@ const Navbar = () => {
         <div className="md:hidden bg-white dark:bg-gray-900 shadow-md transition-all px-6 pt-2 pb-4 rounded-xl mt-2 mx-auto max-w-7xl">
           <ul className="flex flex-col space-y-3 text-gray-700 dark:text-white font-medium">
             <li>
-              <Link href="#" className="block hover:text-[#149386] text-[#1BA89B] font-semibold">
+              <a 
+                href="/" 
+                onClick={(e) => scrollToSection(e, 'top')} 
+                className="block hover:text-[#149386] text-[#1BA89B] font-semibold"
+              >
                 Home
-              </Link>
+              </a>
             </li>
             <li>
-              <Link href="#" className="block hover:text-[#149386]">
+              <a 
+                href="#about" 
+                onClick={(e) => scrollToSection(e, 'about')} 
+                className="block hover:text-[#149386]"
+              >
                 About
-              </Link>
+              </a>
             </li>
             <li>
-              <Link href="#" className="block hover:text-[#149386]">
+              <a 
+                href="#services" 
+                onClick={(e) => scrollToSection(e, 'services')} 
+                className="block hover:text-[#149386]"
+              >
                 Services
-              </Link>
+              </a>
             </li>
             <li>
-              <Link href="#" className="block hover:text-[#149386]">
-                Pricing
-              </Link>
+              <a 
+                href="#gallery" 
+                onClick={(e) => scrollToSection(e, 'gallery')} 
+                className="block hover:text-[#149386]"
+              >
+                Gallery
+              </a>
             </li>
             <li>
-              <Link
-                href="#"
+              <a 
+                href="#faq" 
+                onClick={(e) => scrollToSection(e, 'faq')} 
+                className="block hover:text-[#149386]"
+              >
+                FAQ
+              </a>
+            </li>
+            <li>
+              <a
+                href="#contact"
+                onClick={(e) => scrollToSection(e, 'contact')}
                 className="inline-block mt-2 bg-[#1BA89B] text-white px-4 py-2 rounded-full hover:bg-[#149386] transition-colors"
               >
                 Contact
-              </Link>
+              </a>
             </li>
           </ul>
         </div>

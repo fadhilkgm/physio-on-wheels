@@ -4,7 +4,7 @@ import React from "react";
 
 const ProblemSection = () => {
   return (
-    <section className="py-16 bg-gradient-to-b from-white to-blue-50">
+    <section className="py-16 bg-gradient-to-b from-white to-blue-50" id="services">
       <div className="container mx-auto px-4 max-w-[90rem]">
         <div className="text-center mb-12">
           <h2 className="text-[#1BA89B] text-xl font-medium mb-2">Services</h2>

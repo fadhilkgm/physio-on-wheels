@@ -1,30 +1,9 @@
 "use client";
 
-import React, { useEffect } from "react";
+import React from "react";
+import Image from "next/image";
 
 const ProcessSection = () => {
-  const instagramUrl =
-    "https://www.instagram.com/reel/DIlMl5_SAkE/?igsh=MXdkYjVkcWw5NnozZQ==";
-
-  useEffect(() => {
-    // Load the Instagram embed script only once
-    const script = document.createElement("script");
-    script.src = "//www.instagram.com/embed.js";
-    script.async = true;
-    document.body.appendChild(script);
-
-    return () => {
-      document.body.removeChild(script);
-    };
-  }, []);
-
-  useEffect(() => {
-    // Re-process embeds when URL changes
-    if ((window as any).instgrm) {
-      (window as any).instgrm.Embeds.process();
-    }
-  }, [instagramUrl]);
-
   return (
     <section id="action-plan" className="py-20 bg-physiobg-light">
       <div className="container max-w-7xl mx-auto px-4">
@@ -41,14 +20,14 @@ const ProcessSection = () => {
                 <>
                   Call me at{" "}
                   <a
-                    href="tel:+918848481112"
+                    href="tel:+917370025002"
                     className="text-physio-primary font-semibold"
                   >
-                    +91 884 848 1112
+                    +91 737 002 5002
                   </a>{" "}
                   or book a{" "}
                   <a
-                    href="https://wa.me/+918848481112"
+                    href="https://wa.me/+917370025002?text=Hi,%20I'm%20interested%20in%20booking%20a%20consultation."
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-physio-primary font-semibold"
@@ -90,26 +69,80 @@ const ProcessSection = () => {
             </div>
           ))}
         </div>
-
-        <div className="mt-20 lg:mt-28">
-          <h3 className="text-2xl font-bold text-center text-physio-dark mb-8">
+        <div className="py-8 px-4 max-w-4xl mx-auto mt-20">
+          <h2 className="text-4xl md:text-5xl font-bold text-center mb-16 text-physio-dark leading-tight" id="gallery">
             Real moments from real progress
-          </h3>
-          <div className="flex justify-center">
-            <blockquote
-              className="instagram-media"
-              data-instgrm-permalink={instagramUrl}
-              data-instgrm-version="14"
-              style={{
-                background: "#FFF",
-                border: 0,
-                borderRadius: "10px",
-                margin: 0,
-                padding: 0,
-                width: "60%",
-                maxWidth: "540px",
-              }}
-            ></blockquote>
+          </h2>
+
+          {/* Grid layout with uniform 9:16 aspect ratio items */}
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3">
+            <div className="aspect-[9/16] rounded-lg overflow-hidden shadow-md">
+              <video
+                src="/gallery/IATSM video.mp4"
+                controls
+                className="w-full h-full object-cover"
+              ></video>
+            </div>
+
+            <div className="aspect-[9/16] rounded-lg overflow-hidden shadow-md">
+              <video
+                src="/gallery/video2.MP4"
+                controls
+                className="w-full h-full object-cover"
+              ></video>
+            </div>
+
+            <div className="aspect-[9/16] rounded-lg overflow-hidden shadow-md">
+              <img
+                src="/gallery/img1.jpeg"
+                alt="Physical therapy session"
+                className="w-full h-full object-cover"
+              />
+            </div>
+
+            <div className="aspect-[9/16] rounded-lg overflow-hidden shadow-md">
+              <img
+                src="/gallery/img2.jpeg"
+                alt="Physical therapy session"
+                className="w-full h-full object-cover"
+              />
+            </div>
+
+            <div className="aspect-[9/16] rounded-lg overflow-hidden shadow-md">
+              <img
+                src="/gallery/img3.jpeg"
+                alt="Physical therapy session"
+                className="w-full h-full object-cover"
+              />
+            </div>
+
+            <div className="aspect-[9/16] rounded-lg overflow-hidden shadow-md">
+              <img
+                src="/gallery/img4.jpeg"
+                alt="Physical therapy session"
+                className="w-full h-full object-cover"
+              />
+            </div>
+            <div className="aspect-[9/16] rounded-lg overflow-hidden shadow-md">
+              <img
+                src="/gallery/img5.PNG"
+                alt="Physical therapy session"
+                className="w-full h-full object-cover"
+              />
+            </div>
+            <div className="aspect-[9/16] rounded-lg overflow-hidden shadow-md">
+              <img
+                src="/gallery/img6.PNG"
+                alt="Physical therapy session"
+                className="w-full h-full object-cover"
+              />
+            </div>
+          </div>
+
+          <div className="mt-4 text-center">
+            <p className="text-physio-dark text-sm">
+              Experience the journey to recovery through our patients' successes
+            </p>
           </div>
         </div>
       </div>

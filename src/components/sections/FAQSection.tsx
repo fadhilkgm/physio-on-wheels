@@ -12,33 +12,43 @@ const FAQSection = () => {
   const faqs = [
     {
       id: "faq-1",
-      question: "Is in-home physiotherapy right for me?",
-      answer: "In-home physiotherapy is ideal if you have mobility limitations, transportation challenges, a busy schedule, or simply prefer the comfort of your own environment. It's particularly beneficial for seniors, individuals with chronic conditions, and those recovering from surgery."
+      question: "Is home physiotherapy right for me?",
+      answer: "Our mobile physiotherapy service is perfect if you have mobility challenges, difficulty traveling, or prefer the comfort and convenience of treatment at home. It's especially beneficial for seniors, post-operative patients, and those with chronic pain or neurological conditions."
     },
     {
       id: "faq-2",
       question: "What conditions do you treat?",
-      answer: "I specialize in treating a wide range of conditions including chronic pain, neurological disorders (stroke, Parkinson's, MS), post-surgical rehabilitation, balance disorders, arthritis, and geriatric mobility issues. Each treatment plan is personalized to your specific needs and goals."
+      answer: "Physio on Wheels treats a wide range of conditions including arthritis, stroke rehabilitation, Parkinson's, back/neck pain, joint replacements, sports injuries, and age-related mobility issues. Our Kerala-based team specializes in personalized care for Indian patients."
     },
     {
       id: "faq-3",
-      question: "Do I need a doctor's referral?",
-      answer: "No, a doctor's referral is not required to begin physiotherapy in British Columbia. However, if you plan to use extended health insurance, your provider may require a referral for reimbursement."
+      question: "Do I need a doctor's prescription?",
+      answer: "While a doctor's prescription isn't mandatory for physiotherapy in India, we recommend consulting your physician. Some insurance providers may require a prescription for claim processing."
     },
     {
       id: "faq-4",
-      question: "What areas do you serve?",
-      answer: "I provide in-home physiotherapy throughout North Vancouver, West Vancouver, the Sea to Sky Corridor up to Squamish, and virtual care across British Columbia. For areas outside these regions, please contact me to discuss options."
+      question: "Which areas in Kerala do you serve?",
+      answer: "We currently cover major areas in Ernakulam, Thrissur, and nearby regions in central Kerala. Service availability depends on location - please call +91 XXXXX XXXXX to confirm coverage in your area."
     },
     {
       id: "faq-5",
-      question: "How can I schedule an appointment?",
-      answer: "You can schedule an appointment by calling me at 1 (604) 849-3737 or by booking a virtual visit online. I offer flexible scheduling to accommodate your needs."
+      question: "How do I book a session?",
+      answer: "Book easily via WhatsApp (+91 737 002 5002), our website (www.physioonwheels.in). We offer same-day appointments for urgent cases."
     },
     {
       id: "faq-6",
-      question: "Are your services covered by my insurance?",
-      answer: "Physiotherapy services are covered by most extended health insurance plans, MSP (with a referral), ICBC for accident claims, and WorkSafeBC for workplace injuries. I provide receipts for all sessions which you can submit to your insurance provider for reimbursement."
+      question: "What is the cost of a session?",
+      answer: "Our sessions are competitively priced. Please contact us for a quote. We accept cash, online bank transfers, or card payments."
+    },
+    {
+      id: "faq-7",
+      question: "What equipment do you bring?",
+      answer: "Our mobile units carry portable electrotherapy machines, resistance bands, weights, and other essential equipment. For specialized devices, we may arrange clinic visits when necessary."
+    },
+    {
+      id: "faq-8",
+      question: "How are your physiotherapists qualified?",
+      answer: "All Physio on Wheels therapists are BPT/MPT certified from recognized Indian universities, registered with the Kerala Para Medical Council, with minimum 3 years clinical experience."
     }
   ];
 
