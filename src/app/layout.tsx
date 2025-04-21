@@ -11,8 +11,17 @@ const poppins = Poppins({
 });
 
 export const metadata: Metadata = {
-  title: "Physio on Wheels - Accessible Physical Therapy",
-  description: "Pascal offers in-home physical therapy in North Vancouver, West Vancouver, the Sea to Sky Corridor up to Squamish, and virtual care across BC. He specialises in chronic pain, neurological disorders, post-surgical rehabilitation, and geriatrics.",
+  title: "Physio on Wheels | Kerala's Premier Mobile Physiotherapy Service",
+  description: "MFitt's mobile physiotherapy service brings expert care to your home in Calicut. Specializing in post-surgical rehab, stroke recovery, arthritis management, and geriatric mobility for Kerala's families.",
+  keywords: [
+    "Mobile physiotherapy Calicut",
+    "Home physio Kunnamangalam",
+    "Best physiotherapist Kerala",
+    "Stroke rehabilitation at home",
+    "MFitt physio services",
+    "Elderly mobility care Kerala",
+    "Pain management physiotherapy"
+  ]
 };
 
 export default function RootLayout({

@@ -81,6 +81,8 @@ const ProcessSection = () => {
                 src="/gallery/IATSM video.mp4"
                 controls
                 className="w-full h-full object-cover"
+                muted
+                poster="/IASTM therapy.jpeg"
               ></video>
             </div>
 
@@ -88,6 +90,8 @@ const ProcessSection = () => {
               <video
                 src="/gallery/video2.MP4"
                 controls
+                muted
+                poster="/IASTM therapy.jpeg"
                 className="w-full h-full object-cover"
               ></video>
             </div>
