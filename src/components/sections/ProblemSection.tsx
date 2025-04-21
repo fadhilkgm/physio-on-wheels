@@ -4,12 +4,16 @@ import React from "react";
 
 const ProblemSection = () => {
   return (
-    <section className="py-16 bg-gradient-to-b from-white to-blue-50" id="services">
+    <section
+      className="py-16 bg-gradient-to-b from-white to-blue-50"
+      id="services"
+    >
       <div className="container mx-auto px-4 max-w-[90rem]">
         <div className="text-center mb-12">
           <h2 className="text-[#1BA89B] text-xl font-medium mb-2">Services</h2>
           <h2 className="text-3xl md:text-4xl font-bold text-center mb-2 text-physio-dark">
-            Comprehensive in-home therapy services <br className="hidden md:block" /> with Physio on Wheels.
+            Comprehensive in-home therapy services{" "}
+            <br className="hidden md:block" /> with Physio on Wheels.
           </h2>
         </div>
 
@@ -19,50 +23,48 @@ const ProblemSection = () => {
             {
               imgSrc: "/stroke-rehab.jpg",
               title: "Stroke & Neuro Rehabilitation",
-              desc: "Immerse yourself in a dynamic learning environment with experienced instructors. Our comprehensive courses cater to all levels, ensuring you gain fluency and confidence in the German language.",
+              desc: "Regain mobility and independence with our specialized neuro rehabilitation programs. Our evidence-based therapies focus on restoring function, improving coordination, and enhancing quality of life after stroke or neurological conditions.",
             },
             {
               imgSrc: "/physio-img2.jpg",
               title: "Ortho & Sports Rehabilitation",
-              desc: "Take your B2 proficiency exam conveniently at our dedicated exam center. Benefit from a seamless testing experience, ensuring you are well-prepared and supported throughout the process.",
+              desc: "Recover from injuries, surgeries, or sports-related strains with customized rehabilitation plans. Our therapies target pain relief, strength restoration, and optimal performance for athletes and active individuals.",
             },
             {
               imgSrc: "/needle-treatment.jpg",
               title: "Needle Therapy",
-              desc: "Relieve pain and inflammation with our expertly administered needle therapy. Our personalized approach ensures you receive the most effective treatment for your specific needs.",
+              desc: "Experience targeted pain relief and accelerated healing with our precision needle therapy. This technique stimulates trigger points to reduce muscle tension, improve circulation, and promote recovery.",
             },
-
             {
               imgSrc: "/pain.jpg",
               title: "Pain Management",
-              desc: "Relieve pain and inflammation with our expertly administered needle therapy. Our personalized approach ensures you receive the most effective treatment for your specific needs.",
+              desc: "Combat chronic or acute pain with our multidisciplinary approach. From manual therapy to advanced modalities, we create personalized plans to address the root cause of your discomfort.",
             },
             {
               imgSrc: "/IASTM therapy.jpeg",
               title: "IASTM Therapy",
-              desc: "Relieve pain and inflammation with our expertly administered needle therapy. Our personalized approach ensures you receive the most effective treatment for your specific needs.",
+              desc: "Break down scar tissue and fascial restrictions using specialized tools. IASTM therapy enhances mobility, reduces pain, and speeds up recovery for soft tissue injuries.",
             },
             {
               imgSrc: "/antenatal.png",
-              title: "Antenatal and Postnatal physiotherapy",
-              desc: "Relieve pain and inflammation with our expertly administered needle therapy. Our personalized approach ensures you receive the most effective treatment for your specific needs.",
+              title: "Antenatal and Postnatal Physiotherapy",
+              desc: "Support your body through pregnancy and postpartum recovery with safe, effective exercises. Our programs alleviate back pain, pelvic discomfort, and prepare you for a stronger postpartum journey.",
             },
             {
               imgSrc: "/gym physiotherapy.jpg",
               title: "Work Plus Therapy & Gym Physiotherapy",
-              desc: "Relieve pain and inflammation with our expertly administered needle therapy. Our personalized approach ensures you receive the most effective treatment for your specific needs.",
+              desc: "Bridge the gap between rehabilitation and fitness with tailored gym-based physio. Whether recovering from injury or enhancing performance, we design programs to meet your goals.",
             },
             {
               imgSrc: "/pediatric.jpg",
               title: "Geriatric & Pediatric Physiotherapy",
-              desc: "Relieve pain and inflammation with our expertly administered needle therapy. Our personalized approach ensures you receive the most effective treatment for your specific needs.",
+              desc: "Specialized care for all ages—from children with developmental delays to seniors managing arthritis. Our gentle, adaptive techniques improve mobility, balance, and daily function.",
             },
             {
               imgSrc: "/postoperative.jpg",
-              title: "Post Operative Physiotherapy",
-              desc: "Relieve pain and inflammation with our expertly administered needle therapy. Our personalized approach ensures you receive the most effective treatment for your specific needs.",
+              title: "Post-Operative Physiotherapy",
+              desc: "Optimize recovery after surgery with guided rehabilitation. We focus on reducing swelling, restoring range of motion, and rebuilding strength for a faster return to daily activities.",
             },
-
           ].map((card, index) => (
             <div
               key={index}

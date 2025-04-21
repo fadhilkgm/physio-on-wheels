@@ -78,7 +78,7 @@ const ProcessSection = () => {
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3">
             <div className="aspect-[9/16] rounded-lg overflow-hidden shadow-md">
               <video
-                src="/gallery/IATSM video.mp4"
+                src="/gallery/video1.mp4"
                 controls
                 className="w-full h-full object-cover"
                 muted
@@ -88,7 +88,7 @@ const ProcessSection = () => {
 
             <div className="aspect-[9/16] rounded-lg overflow-hidden shadow-md">
               <video
-                src="/gallery/video2.MP4"
+                src="/gallery/video2.mp4"
                 controls
                 muted
                 poster="/IASTM therapy.jpeg"

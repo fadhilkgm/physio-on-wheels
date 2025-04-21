@@ -36,7 +36,7 @@ const HeroSection = () => {
             <div className="flex flex-col sm:flex-row gap-4">
               <a
                 href="tel:7370025002"
-                className="bg-physio-primary text-white px-6 py-3 rounded-full text-sm font-semibold hover:bg-physio-primary/90 transition shadow"
+                className="bg-physio-primary text-white px-6 py-3 rounded-full text-sm font-semibold hover:bg-physio-primary/90 transition shadow flex items-center justify-center"
               >
                 Call for a Consult
               </a>
