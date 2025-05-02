@@ -23,11 +23,10 @@ const Footer = () => {
               Address
             </h3>
             <address className="not-italic text-sm text-gray-400">
-              Karanthur
+              Kunnamangalam,
               <br />
-              Kunnamangalam
-              <br />
-              Near Markaz
+              Calicut,<br />
+              Kerala, India
             </address>
           </div>
 
@@ -37,10 +36,10 @@ const Footer = () => {
             </h3>
             <p className="text-sm text-gray-400 mb-1">
               <a
-                href="mailto:info@physioonwheels.in"
+                href="mailto:physioonwheelskgm@gmail.com"
                 className="hover:text-white transition"
               >
-                info@physioonwheels.in
+                physioonwheelskgm@gmail.com
               </a>
             </p>
             <p className="text-sm text-gray-400 mb-1">
@@ -53,9 +52,22 @@ const Footer = () => {
                 href="https://www.instagram.com/physio_on_wheels"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="hover:text-white transition"
+                className="hover:text-white transition flex items-center"
               >
-                instagram.com/physio_on_wheels
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  className="w-5 h-5 mr-1"
+                >
+                  <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
+                  <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z" />
+                  <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
+                </svg>
               </a>
             </p>
           </div>
